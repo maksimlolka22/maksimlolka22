@@ -1,0 +1,48 @@
+.prototyping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+    }
+
+    &__title {
+        @include sizes(318px, 114px);
+        @include font(700, 46px, 57px, 0.2px);
+        color: $darkblue;
+        text-align: center;
+    }
+
+    &__description {
+        @include sizes(318px, 40px);
+        @include font(700, 16px, 20px, 0.2px);
+        color: $greyblue;
+        text-align: center;
+    }
+
+    &_form {
+        display: flex;
+        justify-content: center;
+        @include sizes(236px, 60px);
+        @include input($blue, 1px solid $blue, 35px);
+        background: $blue;
+        margin: 90px 0px 113px;
+
+    }
+
+    &__button {
+        @include font(700, 22px, 33px, 0.1px);
+        color: $white;
+        border: none;
+        background: none;
+    }
+
+    &__img {
+        margin-bottom: 40px;
+    }
+}

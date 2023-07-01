@@ -1,0 +1,19 @@
+@mixin font ($font-weight, $font-size, $line-height, $letter-spacing, $font-family: 'Roboto', $font-style: normal) {
+    font-weight: $font-weight ;
+    font-size: $font-size ;
+    line-height: $line-height ;
+    font-family: $font-family;
+    font-style: $font-style;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin input($background, $border, $border-radius) {
+    background: $background;
+    border: $border;
+    border-radius: $border-radius;
+}

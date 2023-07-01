@@ -1,0 +1,57 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    padding-top: 238px;
+
+
+    &__heading {
+        @include sizes(175px, 33px);
+        @include font(700, 22px, 33px, 0.1px);
+        text-align: center;
+        color: $darkblue;
+    }
+
+    &__title {
+        @include sizes(180px, 57px);
+        @include font(400, 46px, 57px, 0.2px);
+        text-align: center;
+        color: $darkblue;
+    }
+
+    &__description {
+        @include sizes(298px, 40px);
+        @include font(700, 16px, 20px, 0.2px);
+        text-align: center;
+        color: $greyblue;
+    }
+
+    &_fcard {
+        display: flex;
+        gap: 52px;
+        padding-top: 90px;
+    }
+
+    &_fcard_container {
+        @include sizes(255px, 187px);
+
+    }
+
+    &_fcard__box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        @include sizes(250px, 86px);
+    }
+
+    &_fcard__title {
+        @include font(700, 22px, 33px, 0.1px);
+        color: $darkblue;
+    }
+
+    &_fcard__description {
+        @include font(400, 18px, 27px, 0.2px);
+        color: $greyblue;
+    }
+}

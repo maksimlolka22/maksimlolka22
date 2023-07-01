@@ -1,0 +1,50 @@
+.wrap_background {
+    background: linear-gradient(28deg, #EF2779 0%, #7834BE 100%);
+    width: 1440px;
+}
+
+.subscription {
+    display: flex;
+    padding: 70px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription__heading {
+    @include font(700, 22px, 33px, 0.1px);
+    text-align: center;
+    color: $white;
+    margin-bottom: 7px;
+}
+
+.subscription__title {
+    @include font(700, 46px, 57px, 0.2px);
+    text-align: center;
+    color: $white;
+    margin-bottom: 59px;
+}
+
+.subscription_text__description {
+    @include font(700, 18px, 27px, 0.2px);
+    text-align: center;
+    color: $white;
+    margin-bottom: 34px;
+}
+
+.subscription_input {
+    display: flex;
+    padding: 19px 35px;
+    width: 353px;
+    @include input(#F4F4F4, 1px solid #E8E8E8, 39px);
+    @include font(700, 14px, 16px, 0.1px);
+    color: $violet;
+    margin-bottom: 10px;
+}
+
+.subscription_button {
+    @include sizes(353px, 54px);
+    @include input($red, 1px solid $red, 35px);
+    @include font(500, 16px, 16px, 0.2px);
+    border: none;
+    color: $white;
+}

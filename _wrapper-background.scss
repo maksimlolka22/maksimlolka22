@@ -1,0 +1,110 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    &-background {
+        @include sizes(100%, 860px);
+        background-image: url(../img/backgroundcontent.png);
+        background-size: 100% 860px;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+
+    &_container {
+        width: 1440px;
+        padding: 0px 50px;
+    }
+
+    &_menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0px;
+    }
+
+
+    &_menu_list {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+    }
+
+    &_menu_list__links {
+        gap: 41px;
+        display: flex;
+    }
+
+    &_menu__link {
+        @include font(400, 15px, 27px, 0.2px);
+        text-align: center;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &_input {
+        @include sizes(273px, 54px);
+        @include input(#EFEFEF, 1px solid #E8E8E8, 39px);
+        gap: 64px;
+        padding-left: 54px;
+        padding-right: 13px;
+    }
+
+    &_menu__form {
+        display: flex;
+        @include sizes(426px, 54px);
+        padding: 0px;
+        gap: 12px;
+    }
+
+    &_button {
+        @include font(500, 16px, 16px, 0.2px);
+        @include sizes(141px, 54px);
+        @include input(#FFFFFF, 1px solid #E8E8E8, 35px);
+        color: $red;
+    }
+
+
+    &_content {
+        display: flex;
+        transform: translate(-200px, 0px);
+        padding-top: 70px;
+    }
+
+    &_content_wrapper {
+        @include sizes(420px, 471px);
+        padding: 64px 0px;
+    }
+
+    &_content__heading {
+        @include font(900, 55px, 66px, 0.2px);
+        color: $white;
+        padding-left: 60px;
+
+    }
+
+    &_content__description {
+        @include font(700, 16px, 20px, 0.2px);
+        padding-top: 27px;
+        color: $white;
+        padding-left: 60px;
+    }
+
+    &_content_form {
+        @include sizes(236px, 65px);
+        padding-top: 70px;
+        padding-left: 60px;
+    }
+
+    &_content__button {
+        @include sizes(236px, 65px);
+        @include input(#FFFFFF, 1px solid #E8E8E8, 35px);
+        @include font(700, 22px, 33px, 0.1px);
+        padding: 16px 0px;
+        text-align: center;
+        color: $blue;
+    }
+}
